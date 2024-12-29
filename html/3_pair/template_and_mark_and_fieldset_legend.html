@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Mark Block</h2>
+<p>Here is a <mark>highlighted text</mark> inside a paragraph.</p>
+</div><div>
+<h2>Fieldset & Legend Block</h2>
+<form>
+<fieldset>
+<legend>Personal Info</legend>
+<label for="fname">First name:</label>
+<input type="text" id="fname" name="fname"><br><br>
+<label for="lname">Last name:</label>
+<input type="text" id="lname" name="lname">
+</fieldset>
+</form>
+</div>
+</div>
+</body>
+</html>

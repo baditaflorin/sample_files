@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Citation Block</h2>
+<p>This is a reference to a book: <cite>The Great Gatsby</cite>.</p>
+</div><div>
+<h2>Ruby Parenthesis Block</h2>
+<ruby>
+漢 <rp>(</rp><rt>kan</rt><rp>)</rp>
+</ruby>
+</div>
+</div>
+</body>
+</html>

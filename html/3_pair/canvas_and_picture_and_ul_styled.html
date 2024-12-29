@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Picture Block</h2>
+<picture>
+<source srcset="https://via.placeholder.com/300.webp" type="image/webp">
+<source srcset="https://via.placeholder.com/300.jpg" type="image/jpeg">
+<img src="https://via.placeholder.com/300.jpg" alt="Placeholder Image">
+</picture>
+</div><div>
+<h2>Unordered List with Circle Bullets</h2>
+<ul style="list-style-type: circle;">
+<li>Point One</li>
+<li>Point Two</li>
+</ul>
+</div>
+</div>
+</body>
+</html>

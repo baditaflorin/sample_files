@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Range Input Block</h2>
+<label for="vol">Volume (between 0 and 50):</label>
+<input type="range" id="vol" name="vol" min="0" max="50">
+</div><div>
+<h2>Map & Area Block</h2>
+<img src="https://via.placeholder.com/300x100" alt="Placeholder" usemap="#image-map">
+<map name="image-map">
+<area shape="rect" coords="0,0,50,50" alt="Rectangle" href="#rect">
+<area shape="circle" coords="150,50,25" alt="Circle" href="#circle">
+</map>
+</div><div>
+<h2>Output Calculation Block</h2>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+<input id="a" type="number"> +
+<input id="b" type="number"> =
+<output name="result"></output>
+</form>
+</div>
+</div>
+</body>
+</html>

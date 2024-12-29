@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Embed Block</h2>
+<embed src="https://www.w3schools.com/html/html5.mp4" width="300" height="200">
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Definition Term Block</h2>
+<p>The term <dfn>HTML</dfn> stands for HyperText Markup Language.</p>
+</div>
+</div>
+</body>
+</html>

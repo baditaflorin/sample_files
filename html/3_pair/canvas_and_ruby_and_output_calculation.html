@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Ruby Block</h2>
+<ruby>
+漢 <rt>hàn</rt>
+</ruby>
+</div><div>
+<h2>Output Calculation Block</h2>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+<input id="a" type="number"> +
+<input id="b" type="number"> =
+<output name="result"></output>
+</form>
+</div>
+</div>
+</body>
+</html>

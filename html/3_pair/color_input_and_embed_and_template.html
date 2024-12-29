@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Color Input Block</h2>
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</div><div>
+<h2>Embed Block</h2>
+<embed src="https://www.w3schools.com/html/html5.mp4" width="300" height="200">
+</div><div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div>
+</div>
+</body>
+</html>

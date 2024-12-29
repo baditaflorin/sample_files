@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Object & Param Block</h2>
+<object width="400" height="50" data="data:application/pdf;base64,">
+<param name="autoplay" value="false">
+Your browser does not support the object tag.
+</object>
+</div><div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div><div>
+<h2>Label Block</h2>
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+</form>
+</div>
+</div>
+</body>
+</html>

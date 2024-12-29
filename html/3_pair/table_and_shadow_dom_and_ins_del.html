@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Table Block</h2>
+<table border='1'>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Alice</td><td>25</td></tr>
+  <tr><td>Bob</td><td>30</td></tr>
+</table>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Inserted and Deleted Text Block</h2>
+<p>This is <ins>inserted text</ins> and this is <del>deleted text</del>.</p>
+</div>
+</div>
+</body>
+</html>

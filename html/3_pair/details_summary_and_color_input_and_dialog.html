@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Details & Summary Block</h2>
+<details>
+<summary>Click to expand</summary>
+<p>This is hidden content that appears when you click the summary.</p>
+</details>
+</div><div>
+<h2>Color Input Block</h2>
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</div><div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div>
+</div>
+</body>
+</html>

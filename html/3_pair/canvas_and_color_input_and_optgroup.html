@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Color Input Block</h2>
+<label for="favcolor">Select your favorite color:</label>
+<input type="color" id="favcolor" name="favcolor" value="#ff0000">
+</div><div>
+<h2>Optgroup Block</h2>
+<select>
+<optgroup label="Fruits">
+<option value="apple">Apple</option>
+<option value="banana">Banana</option>
+</optgroup>
+<optgroup label="Vegetables">
+<option value="carrot">Carrot</option>
+<option value="broccoli">Broccoli</option>
+</optgroup>
+</select>
+</div>
+</div>
+</body>
+</html>

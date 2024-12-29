@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Reversed Ordered List Block</h2>
+<ol reversed>
+<li>Item 3</li>
+<li>Item 2</li>
+<li>Item 1</li>
+</ol>
+</div><div>
+<h2>Definition List Block</h2>
+<dl>
+<dt>HTML</dt>
+<dd>HyperText Markup Language</dd>
+<dt>CSS</dt>
+<dd>Cascading Style Sheets</dd>
+</dl>
+</div>
+</div>
+</body>
+</html>

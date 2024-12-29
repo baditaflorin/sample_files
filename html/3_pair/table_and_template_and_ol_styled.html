@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Table Block</h2>
+<table border='1'>
+  <tr><th>Name</th><th>Age</th></tr>
+  <tr><td>Alice</td><td>25</td></tr>
+  <tr><td>Bob</td><td>30</td></tr>
+</table>
+</div><div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Ordered List with Roman Numerals</h2>
+<ol type="I">
+<li>First Item</li>
+<li>Second Item</li>
+<li>Third Item</li>
+</ol>
+</div>
+</div>
+</body>
+</html>

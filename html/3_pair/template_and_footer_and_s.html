@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><footer>
+<h2>Footer Block</h2>
+<p>© 2024 My Website. All Rights Reserved.</p>
+</footer><div>
+<h2>Strikethrough Block</h2>
+<p>This is <s>deprecated text</s> that has been marked as removed.</p>
+</div>
+</div>
+</body>
+</html>

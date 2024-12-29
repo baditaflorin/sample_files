@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Script and Grid Block</h2>
+<div class='grid-container' style='display: grid; grid-template-columns: auto auto auto; gap: 10px;'>
+  <div>Grid Item 1</div>
+  <div>Grid Item 2</div>
+  <div>Grid Item 3</div>
+</div>
+<script>
+console.log('Grid Example Loaded');
+</script>
+</div><div>
+<h2>Figure Block</h2>
+<figure>
+<img src="https://via.placeholder.com/150" alt="Placeholder">
+<figcaption>Caption for the image</figcaption>
+</figure>
+</div><div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div>
+</div>
+</body>
+</html>

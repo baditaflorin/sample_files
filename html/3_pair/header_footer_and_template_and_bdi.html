@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<header>
+<h1>Site Header</h1>
+</header>
+<footer>
+<p>Site Footer</p>
+</footer><div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>BDI Block</h2>
+<p>Username: <bdi>user1234</bdi></p>
+<p>This ensures the text is isolated from its surroundings.</p>
+</div>
+</div>
+</body>
+</html>

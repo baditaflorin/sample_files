@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Button Block</h2>
+<button onclick="alert('Button clicked!')">Click Me</button>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Preformatted Text Block</h2>
+<pre>
+function greet() {
+console.log("Hello, world!");
+}
+</pre>
+</div>
+</div>
+</body>
+</html>

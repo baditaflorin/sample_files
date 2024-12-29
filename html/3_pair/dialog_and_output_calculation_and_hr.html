@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div><div>
+<h2>Output Calculation Block</h2>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+<input id="a" type="number"> +
+<input id="b" type="number"> =
+<output name="result"></output>
+</form>
+</div><div>
+<h2>Horizontal Rule Block</h2>
+<p>This is some text above the line.</p>
+<hr>
+<p>This is some text below the line.</p>
+</div>
+</div>
+</body>
+</html>

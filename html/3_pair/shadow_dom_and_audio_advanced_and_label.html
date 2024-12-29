@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Advanced Audio Block</h2>
+<audio controls>
+<source src="https://www.w3schools.com/html/horse.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div><div>
+<h2>Label Block</h2>
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+</form>
+</div>
+</div>
+</body>
+</html>

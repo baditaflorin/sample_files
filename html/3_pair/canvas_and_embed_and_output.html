@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Embed Block</h2>
+<embed src="https://www.w3schools.com/html/html5.mp4" width="300" height="200">
+</div><div>
+<h2>Output Block</h2>
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="number" id="a" value="10"> +
+<input type="number" id="b" value="20"> =
+<output name="x" for="a b"></output>
+</form>
+</div>
+</div>
+</body>
+</html>

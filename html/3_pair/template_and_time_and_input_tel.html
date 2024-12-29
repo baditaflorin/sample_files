@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Time Block</h2>
+<p>Current Time: <time datetime="2024-12-29T14:30">December 29, 2024, 2:30 PM</time></p>
+</div><div>
+<h2>Telephone Input Block</h2>
+<form>
+<label for="tel">Phone Number:</label>
+<input type="tel" id="tel" name="tel">
+</form>
+</div>
+</div>
+</body>
+</html>

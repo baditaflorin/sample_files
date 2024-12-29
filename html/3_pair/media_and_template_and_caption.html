@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Media Block</h2>
+<img src='https://via.placeholder.com/150' alt='Placeholder Image'>
+<video width='320' height='240' controls>
+  <source src='https://www.w3schools.com/html/mov_bbb.mp4' type='video/mp4'>
+</video>
+</div><div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Caption Block</h2>
+<table>
+<caption>Monthly Savings</caption>
+<tr><th>Month</th><th>Amount</th></tr>
+<tr><td>January</td><td>$200</td></tr>
+<tr><td>February</td><td>$250</td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>

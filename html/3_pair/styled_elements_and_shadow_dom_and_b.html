@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div style='background-color: lightblue; padding: 10px;'>
+<h2>Styled Block</h2>
+<p>This block has inline CSS styling.</p>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Bold Text Block</h2>
+<p>This is <b>bold</b> text.</p>
+</div>
+</div>
+</body>
+</html>

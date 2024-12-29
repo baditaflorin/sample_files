@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Datalist Block</h2>
+<label for="icecream">Choose an ice cream flavor:</label>
+<input list="flavors" name="icecream" id="icecream">
+<datalist id="flavors">
+<option value="Vanilla">
+<option value="Chocolate">
+<option value="Strawberry">
+</datalist>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Summary Block</h2>
+<details>
+<summary>Click here for more information</summary>
+<p>This is additional content visible after clicking the summary.</p>
+</details>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Citation Block</h2>
+<p>This is a reference to a book: <cite>The Great Gatsby</cite>.</p>
+</div><div>
+<h2>Label Block</h2>
+<form>
+<label for="username">Username:</label>
+<input type="text" id="username" name="username">
+</form>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Time Block</h2>
+<p>Current Time: <time datetime="2024-12-29T14:30">December 29, 2024, 2:30 PM</time></p>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>BDO Block</h2>
+<p>Text direction overridden: <bdo dir="rtl">This text is displayed right-to-left.</bdo></p>
+</div>
+</div>
+</body>
+</html>

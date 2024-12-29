@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Email Input Block</h2>
+<form>
+<label for="email">Email:</label>
+<input type="email" id="email" name="email" required>
+</form>
+</div><div>
+<h2>Small Text Block</h2>
+<p>This text is <small>smaller</small> than the rest.</p>
+</div>
+</div>
+</body>
+</html>

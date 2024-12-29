@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Details & Summary Block</h2>
+<details>
+<summary>Click to expand</summary>
+<p>This is hidden content that appears when you click the summary.</p>
+</details>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Inline Code Block</h2>
+<p>Use <code>console.log()</code> for debugging.</p>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Map & Area Block</h2>
+<img src="https://via.placeholder.com/300x100" alt="Placeholder" usemap="#image-map">
+<map name="image-map">
+<area shape="rect" coords="0,0,50,50" alt="Rectangle" href="#rect">
+<area shape="circle" coords="150,50,25" alt="Circle" href="#circle">
+</map>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Marked Text Block</h2>
+<p>This is <mark>important text</mark> that is highlighted.</p>
+</div>
+</div>
+</body>
+</html>

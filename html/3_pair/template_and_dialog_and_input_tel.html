@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Template Block</h2>
+<template id="myTemplate">
+<p>This is a template content that can be cloned via JavaScript.</p>
+</template>
+<script>
+const temp = document.getElementById('myTemplate');
+const clone = temp.content.cloneNode(true);
+document.body.appendChild(clone);
+</script>
+</div><div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div><div>
+<h2>Telephone Input Block</h2>
+<form>
+<label for="tel">Phone Number:</label>
+<input type="tel" id="tel" name="tel">
+</form>
+</div>
+</div>
+</body>
+</html>

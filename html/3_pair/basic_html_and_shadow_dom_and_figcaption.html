@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h1>Basic Block</h1>
+<p>This block contains minimal HTML elements.</p>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div><div>
+<h2>Figure with Figcaption Block</h2>
+<figure>
+<img src="https://via.placeholder.com/150" alt="Placeholder">
+<figcaption>This is a caption for the image.</figcaption>
+</figure>
+</div>
+</div>
+</body>
+</html>

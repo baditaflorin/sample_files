@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Anchor Block</h2>
+<p>Here is an <a href="https://www.example.com">example link</a> to test anchors.</p>
+</div><div>
+<h2>Blockquote Block</h2>
+<blockquote cite="https://www.example.com">
+"This is a famous quote from an external source."
+</blockquote>
+</div><div>
+<h2>Shadow DOM Block</h2>
+<template id="shadowTemplate">
+<p>This is inside the shadow DOM.</p>
+</template>
+<script>
+const template = document.getElementById('shadowTemplate');
+const shadowRoot = document.createElement('div').attachShadow({mode: 'open'});
+shadowRoot.appendChild(template.content.cloneNode(true));
+document.body.appendChild(shadowRoot);
+</script>
+</div>
+</div>
+</body>
+</html>

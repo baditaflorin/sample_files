@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Details & Summary Block</h2>
+<details>
+<summary>Click to expand</summary>
+<p>This is hidden content that appears when you click the summary.</p>
+</details>
+</div><div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div><div>
+<h2>Code Block</h2>
+<pre>
+<code>
+function helloWorld() {
+console.log('Hello, world!');
+}
+</code>
+</pre>
+</div>
+</div>
+</body>
+</html>
