@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Canvas Block</h2>
+<canvas id='myCanvas' width='200' height='100' style='border:1px solid #000000;'>
+Your browser does not support the HTML canvas tag.
+</canvas>
+<script>
+var c = document.getElementById('myCanvas');
+var ctx = c.getContext('2d');
+ctx.fillStyle = '#FF0000';
+ctx.fillRect(20, 20, 150, 75);
+</script>
+</div><div>
+<h2>Inline Address Block</h2>
+<address>
+Contact us at <a href="mailto:support@example.com">support@example.com</a>.
+</address>
+</div>
+</div>
+</body>
+</html>

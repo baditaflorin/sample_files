@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<div>
+<h2>Combined Block</h2>
+<div>
+<h2>Picture Block</h2>
+<picture>
+<source srcset="https://via.placeholder.com/300.webp" type="image/webp">
+<source srcset="https://via.placeholder.com/300.jpg" type="image/jpeg">
+<img src="https://via.placeholder.com/300.jpg" alt="Placeholder Image">
+</picture>
+</div><div>
+<h2>Dialog Block</h2>
+<dialog id="myDialog">
+<p>This is a dialog box.</p>
+<button onclick="document.getElementById('myDialog').close()">Close</button>
+</dialog>
+<button onclick="document.getElementById('myDialog').show()">Show Dialog</button>
+</div>
+</div>
+</body>
+</html>
